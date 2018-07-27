@@ -3,8 +3,10 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0'
+# use gem 'bcrypt'
+gem 'bcrypt', '3.1.12'
 # Use Bootstrap-sass
-gem 'bootstrap-sass', '3.3.6'
+gem 'bootstrap-sass', '3.3.7'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
@@ -16,7 +18,7 @@ gem 'coffee-rails', '~> 4.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
-# Hndle invalid encoding gems 
+# Hndle invalid encoding gems
 gem 'rack-utf8_sanitizer'
 gem 'utf8-cleaner'
 gem 'handle_invalid_percent_encoding_requests'
@@ -59,7 +61,7 @@ group :test do
 end
 
 group :production do
-  gem 'pg', '0.18.4'
+  gem 'pg', '0.20.0'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
